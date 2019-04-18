@@ -1,0 +1,152 @@
+body {
+  /*background-image: url("graphic.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;*/
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #0c0e10 !important;
+}
+
+.row.box {
+       background-color: #f5deb3d9;
+     font-size: 17px;
+    margin: 3 3;
+     
+    padding: 44px;
+}
+  
+img#img1 {
+   
+    box-shadow: 10px 10px 11px 6px grey;
+}
+
+body, html {
+    background-color: #080e10;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 50%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("Stylesheet/portfolio-background.jpg"); }
+.img2 { background-image: url("Stylesheet/0957ad2cc580325.jpg"); }
+.img3 { background-image: url("Stylesheet/preview.jpg"); }
+.img4 { background-image: url("Stylesheet/girl-taking-photo%20(1).jpg"); }
+.img5 { background-image: url("Stylesheet/aron-visuals-322314-unsplash.jpg"); }
+
+
+/* Position text in the middle of the page/image */
+
+
+@media (max-width: 768px){
+    .bg-text{
+        
+        width:100% !important;
+        /*top:77% !important;*/
+    }
+    }
+    
+@media (max-width:388px){
+    .bg-text{
+        
+       
+        top:59% !important;
+    }
+
+}
+    
+.bg-text {
+  background-color: rgba(0,0,0, 0.4);
+    color: white;
+    /* font-weight: bold; */
+    font-size: 15px;
+    border: 10px solid #f1f1f1;
+    position: fixed;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 687px;
+    padding: 6px;
+    text-align: center;
+    margin-top: 1%;
+    
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #f4511e;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}
+
+.navbar-default {
+    background-color: #4c3c3c !important;
+    border-color: #e01414 !important;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+  /* The name of the animation */
+  animation-name: slide;
+  -webkit-animation-name: slide; 
+  /* The duration of the animation */
+  animation-duration: 1s; 
+  -webkit-animation-duration: 1s;
+  /* Make the element visible */
+  visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  } 
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+.navbar-brand>img {
+    display: block;
+    width: 32px;
+}
